@@ -44,3 +44,37 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
 }
 
+extension AppDelegate {
+	
+	func application(_ app: UIApplication,
+	                 open url: URL,
+	                 options: [UIApplicationOpenURLOptionsKey : Any] = [:]) -> Bool {
+		
+		let userDefaults = UserDefaults(suiteName: "group.com.nickelfox.testpush")
+		if let key = url.absoluteString.components(separatedBy: "=").last,
+			let sharedArray = userDefaults?.object(forKey: key) as? [Data] {
+			
+			var imageArray: [CellModel] = []
+			
+			for imageData in sharedArray {
+				let model = CellModel(image: UIImage(data: imageData)!)
+				imageArray.append(model)
+			}
+			
+			let storyboard = UIStoryboard.init(name: "Main", bundle: nil)
+			let homeVC = storyboard.instantiateViewController(withIdentifier: "ViewController") as! ViewController
+			homeVC.cellItems = imageArray
+			
+			let navVC = storyboard.instantiateViewController(withIdentifier: "NavigationController") as! UINavigationController
+			
+			navVC.viewControllers = [homeVC]
+			self.window?.rootViewController = navVC
+			self.window?.makeKeyAndVisible()
+			
+			return true
+		}
+		
+		return false
+	}
+	
+}

@@ -9,10 +9,20 @@
 			<key>orderHint</key>
 			<integer>0</integer>
 		</dict>
+		<key>ImageShare.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>1</integer>
+		</dict>
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
 		<key>46F103EE1F6D481E00F429D6</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>46F835DE1F70DA2700913E3A</key>
 		<dict>
 			<key>primary</key>
 			<true/>

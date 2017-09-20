@@ -13,7 +13,35 @@
 		46F103FA1F6D481E00F429D6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 46F103F91F6D481E00F429D6 /* Assets.xcassets */; };
 		46F103FD1F6D481E00F429D6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 46F103FB1F6D481E00F429D6 /* LaunchScreen.storyboard */; };
 		46F104051F6D48D200F429D6 /* ImageCollectionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46F104041F6D48D200F429D6 /* ImageCollectionCell.swift */; };
+		46F835E21F70DA2700913E3A /* ShareViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46F835E11F70DA2700913E3A /* ShareViewController.swift */; };
+		46F835E51F70DA2700913E3A /* MainInterface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 46F835E31F70DA2700913E3A /* MainInterface.storyboard */; };
+		46F835E91F70DA2700913E3A /* ImageShare.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 46F835DF1F70DA2700913E3A /* ImageShare.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		46F835F11F70DCB400913E3A /* ShareImageCollectionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46F835F01F70DCB400913E3A /* ShareImageCollectionCell.swift */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		46F835E71F70DA2700913E3A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 46F103E71F6D481E00F429D6 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 46F835DE1F70DA2700913E3A;
+			remoteInfo = ImageShare;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		46F835ED1F70DA2700913E3A /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				46F835E91F70DA2700913E3A /* ImageShare.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		46F103EF1F6D481E00F429D6 /* ImagePicker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ImagePicker.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -24,10 +52,24 @@
 		46F103FC1F6D481E00F429D6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		46F103FE1F6D481E00F429D6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		46F104041F6D48D200F429D6 /* ImageCollectionCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageCollectionCell.swift; sourceTree = "<group>"; };
+		46F835DF1F70DA2700913E3A /* ImageShare.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = ImageShare.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		46F835E11F70DA2700913E3A /* ShareViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShareViewController.swift; sourceTree = "<group>"; };
+		46F835E41F70DA2700913E3A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/MainInterface.storyboard; sourceTree = "<group>"; };
+		46F835E61F70DA2700913E3A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		46F835EE1F70DA9600913E3A /* ImagePicker.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = ImagePicker.entitlements; sourceTree = "<group>"; };
+		46F835EF1F70DB3A00913E3A /* ImageShare.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = ImageShare.entitlements; sourceTree = "<group>"; };
+		46F835F01F70DCB400913E3A /* ShareImageCollectionCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShareImageCollectionCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		46F103EC1F6D481E00F429D6 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		46F835DC1F70DA2700913E3A /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -41,6 +83,7 @@
 			isa = PBXGroup;
 			children = (
 				46F103F11F6D481E00F429D6 /* ImagePicker */,
+				46F835E01F70DA2700913E3A /* ImageShare */,
 				46F103F01F6D481E00F429D6 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -49,6 +92,7 @@
 			isa = PBXGroup;
 			children = (
 				46F103EF1F6D481E00F429D6 /* ImagePicker.app */,
+				46F835DF1F70DA2700913E3A /* ImageShare.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -56,6 +100,7 @@
 		46F103F11F6D481E00F429D6 /* ImagePicker */ = {
 			isa = PBXGroup;
 			children = (
+				46F835EE1F70DA9600913E3A /* ImagePicker.entitlements */,
 				46F103F21F6D481E00F429D6 /* AppDelegate.swift */,
 				46F103F41F6D481E00F429D6 /* ViewController.swift */,
 				46F103F61F6D481E00F429D6 /* Main.storyboard */,
@@ -65,6 +110,18 @@
 				46F104041F6D48D200F429D6 /* ImageCollectionCell.swift */,
 			);
 			path = ImagePicker;
+			sourceTree = "<group>";
+		};
+		46F835E01F70DA2700913E3A /* ImageShare */ = {
+			isa = PBXGroup;
+			children = (
+				46F835EF1F70DB3A00913E3A /* ImageShare.entitlements */,
+				46F835E31F70DA2700913E3A /* MainInterface.storyboard */,
+				46F835E61F70DA2700913E3A /* Info.plist */,
+				46F835F01F70DCB400913E3A /* ShareImageCollectionCell.swift */,
+				46F835E11F70DA2700913E3A /* ShareViewController.swift */,
+			);
+			path = ImageShare;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -77,15 +134,34 @@
 				46F103EB1F6D481E00F429D6 /* Sources */,
 				46F103EC1F6D481E00F429D6 /* Frameworks */,
 				46F103ED1F6D481E00F429D6 /* Resources */,
+				46F835ED1F70DA2700913E3A /* Embed App Extensions */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				46F835E81F70DA2700913E3A /* PBXTargetDependency */,
 			);
 			name = ImagePicker;
 			productName = ImagePicker;
 			productReference = 46F103EF1F6D481E00F429D6 /* ImagePicker.app */;
 			productType = "com.apple.product-type.application";
+		};
+		46F835DE1F70DA2700913E3A /* ImageShare */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 46F835EC1F70DA2700913E3A /* Build configuration list for PBXNativeTarget "ImageShare" */;
+			buildPhases = (
+				46F835DB1F70DA2700913E3A /* Sources */,
+				46F835DC1F70DA2700913E3A /* Frameworks */,
+				46F835DD1F70DA2700913E3A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ImageShare;
+			productName = ImageShare;
+			productReference = 46F835DF1F70DA2700913E3A /* ImageShare.appex */;
+			productType = "com.apple.product-type.app-extension";
 		};
 /* End PBXNativeTarget section */
 
@@ -101,6 +177,21 @@
 						CreatedOnToolsVersion = 8.3.3;
 						DevelopmentTeam = NY45473NT8;
 						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.ApplicationGroups.iOS = {
+								enabled = 1;
+							};
+						};
+					};
+					46F835DE1F70DA2700913E3A = {
+						CreatedOnToolsVersion = 8.3.3;
+						DevelopmentTeam = NY45473NT8;
+						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.ApplicationGroups.iOS = {
+								enabled = 1;
+							};
+						};
 					};
 				};
 			};
@@ -118,6 +209,7 @@
 			projectRoot = "";
 			targets = (
 				46F103EE1F6D481E00F429D6 /* ImagePicker */,
+				46F835DE1F70DA2700913E3A /* ImageShare */,
 			);
 		};
 /* End PBXProject section */
@@ -130,6 +222,14 @@
 				46F103FD1F6D481E00F429D6 /* LaunchScreen.storyboard in Resources */,
 				46F103FA1F6D481E00F429D6 /* Assets.xcassets in Resources */,
 				46F103F81F6D481E00F429D6 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		46F835DD1F70DA2700913E3A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				46F835E51F70DA2700913E3A /* MainInterface.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -146,7 +246,24 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		46F835DB1F70DA2700913E3A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				46F835E21F70DA2700913E3A /* ShareViewController.swift in Sources */,
+				46F835F11F70DCB400913E3A /* ShareImageCollectionCell.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		46F835E81F70DA2700913E3A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 46F835DE1F70DA2700913E3A /* ImageShare */;
+			targetProxy = 46F835E71F70DA2700913E3A /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		46F103F61F6D481E00F429D6 /* Main.storyboard */ = {
@@ -163,6 +280,14 @@
 				46F103FC1F6D481E00F429D6 /* Base */,
 			);
 			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		46F835E31F70DA2700913E3A /* MainInterface.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				46F835E41F70DA2700913E3A /* Base */,
+			);
+			name = MainInterface.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -266,11 +391,14 @@
 		46F104021F6D481E00F429D6 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = ImagePicker/ImagePicker.entitlements;
 				DEVELOPMENT_TEAM = NY45473NT8;
 				INFOPLIST_FILE = ImagePicker/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = Nickelfox.ImagePicker;
+				PRODUCT_BUNDLE_IDENTIFIER = com.nickelfox.testpush;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
 			};
@@ -279,12 +407,45 @@
 		46F104031F6D481E00F429D6 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = ImagePicker/ImagePicker.entitlements;
 				DEVELOPMENT_TEAM = NY45473NT8;
 				INFOPLIST_FILE = ImagePicker/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = Nickelfox.ImagePicker;
+				PRODUCT_BUNDLE_IDENTIFIER = com.nickelfox.testpush;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+		46F835EA1F70DA2700913E3A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = ImageShare/ImageShare.entitlements;
+				DEVELOPMENT_TEAM = NY45473NT8;
+				INFOPLIST_FILE = ImageShare/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.nickelfox.testpush.ImageShare;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		46F835EB1F70DA2700913E3A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = ImageShare/ImageShare.entitlements;
+				DEVELOPMENT_TEAM = NY45473NT8;
+				INFOPLIST_FILE = ImageShare/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.nickelfox.testpush.ImageShare;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
 				SWIFT_VERSION = 3.0;
 			};
 			name = Release;
@@ -306,6 +467,15 @@
 			buildConfigurations = (
 				46F104021F6D481E00F429D6 /* Debug */,
 				46F104031F6D481E00F429D6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		46F835EC1F70DA2700913E3A /* Build configuration list for PBXNativeTarget "ImageShare" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				46F835EA1F70DA2700913E3A /* Debug */,
+				46F835EB1F70DA2700913E3A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 		};
