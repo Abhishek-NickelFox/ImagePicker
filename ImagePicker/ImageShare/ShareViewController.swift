@@ -116,7 +116,7 @@ extension ShareViewController: UICollectionViewDelegate, UICollectionViewDataSou
 	                    sizeForItemAt indexPath: IndexPath) -> CGSize {
 		
 		let viewWidth = UIScreen.main.bounds.size.width
-		let width = (viewWidth - 20) / 3
+		let width = (viewWidth - 40) / 3
 		return CGSize(width: width, height: width)
 	}
 	
